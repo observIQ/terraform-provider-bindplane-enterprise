@@ -31,15 +31,15 @@ func ProviderWithSchema() *schema.Provider {
 	p := ossProvider.ProviderWithSchema()
 
 	// Add Enterprise API key to the schema
-	// apiKey := schema.Schema{
-	// 	Type:     schema.TypeString,
-	// 	Optional: true,
-	// 	DefaultFunc: schema.MultiEnvDefaultFunc([]string{
-	// 		envAPIKey,
-	// 	}, nil),
-	// 	Description: "The endpoint used to connect to the BindPlane OP instance.",
-	// }
-	// p.Schema["api_key"] = &apiKey
+	apiKey := schema.Schema{
+		Type:     schema.TypeString,
+		Optional: true,
+		DefaultFunc: schema.MultiEnvDefaultFunc([]string{
+			envAPIKey,
+		}, nil),
+		Description: "The endpoint used to connect to the BindPlane OP instance.",
+	}
+	p.Schema["api_key"] = &apiKey
 
 	return p
 }
