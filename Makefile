@@ -27,3 +27,22 @@ test-local: provider
 	rm -rf test/local/providers
 	mkdir -p test/local/providers
 	cp dist/provider_$(GOOS)_$(GOARCH_FULL)/terraform-provider-bindplane* test/local/providers/terraform-provider-bindplane-enterprise_v0.0.0
+
+.PHONY: test-end-to-end
+test-end-to-end: dev-tls provider
+	mkdir -p test/integration/providers
+	cp dist/provider_$(GOOS)_$(GOARCH_FULL)/terraform-provider-bindplane* test/integration/providers/terraform-provider-bindplane-enterprise_v0.0.0
+	bash test/integration/test.sh
+
+dev-tls: test/tls
+test/tls:
+	mkdir test/tls
+	docker run \
+		-v ${PWD}/test/scripts/generate-dev-certificates.sh:/generate-dev-certificates.sh \
+		-v ${PWD}/test/tls:/tls \
+		--entrypoint=/bin/sh \
+		alpine/openssl /generate-dev-certificates.sh
+
+.PHONY: clean-dev-tls
+clean-dev-tls:
+	rm -rf test/tls
