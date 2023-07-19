@@ -18,7 +18,7 @@ const (
 
 // Provider returns a *schema.Provider.
 func Provider() *schema.Provider {
-	provider := ProviderWithSchema()
+	provider := Configure()
 
 	provider.ConfigureContextFunc = func(_ context.Context, d *schema.ResourceData) (any, diag.Diagnostics) {
 		return providerConfigure(d, provider)
@@ -27,8 +27,8 @@ func Provider() *schema.Provider {
 	return provider
 }
 
-func ProviderWithSchema() *schema.Provider {
-	p := ossProvider.ProviderWithSchema()
+func Configure() *schema.Provider {
+	p := ossProvider.Configure()
 
 	// Add Enterprise API key to the schema
 	apiKey := schema.Schema{

@@ -6,12 +6,12 @@ require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.26.1
 	github.com/observiq/bindplane-op-enterprise v0.0.0-00010101000000-000000000000
 	github.com/observiq/terraform-provider-bindplane v0.0.0
-	go.uber.org/zap v1.24.0
+	github.com/stretchr/testify v1.8.4
 )
 
 replace (
-	github.com/observiq/bindplane-op-enterprise => /home/jsirianni/git/bindplane-op-enterprise
-	github.com/observiq/terraform-provider-bindplane => /home/jsirianni/git/terraform-provider-bindplane
+	github.com/observiq/bindplane-op-enterprise => /Users/jsirianni/git/bindplane-op-enterprise
+	github.com/observiq/terraform-provider-bindplane => /Users/jsirianni/git/terraform-provider-bindplane
 )
 
 require (
@@ -84,7 +84,6 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.16.0 // indirect
 	github.com/stretchr/objx v0.5.0 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/subosito/gotenv v1.4.2 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
@@ -99,6 +98,7 @@ require (
 	go.opentelemetry.io/otel/trace v1.16.0 // indirect
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
+	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/crypto v0.11.0 // indirect
 	golang.org/x/exp v0.0.0-20230510235704-dd950f8aeaea // indirect
