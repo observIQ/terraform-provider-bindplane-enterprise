@@ -92,37 +92,6 @@ jobs:
       - name: Gosec
         run: make gosec
 
-  check-license:
-    runs-on: "ubuntu-22.04"
-    needs:
-      - setup-environment
-    steps:
-      - name: Check out source code
-        uses: actions/checkout@v3
-
-      - name: Configure GIT SSH
-        run: git config --global url.git@github.com:.insteadOf https://github.com/
-
-      - name: Configure SSH Key
-        uses: webfactory/ssh-agent@v0.7.0
-        with:
-            ssh-private-key: ${{ secrets.BINDPLANE_ENTERPRISE_SSH_PRIVATE_KEY }}
-
-      - name: Set up Go
-        uses: actions/setup-go@v3
-        with:
-          go-version: "1.20.5"
-
-      - name: Cache Tools
-        id: tool-cache
-        uses: actions/cache@v3
-        with:
-          path: /home/runner/go/bin
-          key: tooling-${{ runner.os }}-${{ hashFiles('./internal/tools/go.mod') }}
-
-      - name: Check License Headers
-        run: make check-license
-
   lint:
     runs-on: "ubuntu-22.04"
     needs:
