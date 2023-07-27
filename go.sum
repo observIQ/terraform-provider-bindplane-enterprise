@@ -288,8 +288,8 @@ github.com/observiq/bindplane-op-enterprise v1.21.0 h1:9ZNPZU/5IuWpvSOWXslDdeifk
 github.com/observiq/bindplane-op-enterprise v1.21.0/go.mod h1:i710gU5ozYLeSEIP1Zw0Uj/qL4+7QlJ5xGRfB00gBTs=
 github.com/observiq/stanza v1.6.1 h1:VfnZ/JYz4zwZKznGWWyMShUCOMK4AeEax/aOTcXmpJI=
 github.com/observiq/stanza v1.6.1/go.mod h1:NAULITrz4PyrqwWPJJ/MOe11TVoA67RqlWTdFrXFNXA=
-github.com/observiq/terraform-provider-bindplane v0.0.1 h1:hX2+aTDhN9FFrQj3AUxhmLTfeU76tV4CWkW+t4HtmTA=
-github.com/observiq/terraform-provider-bindplane v0.0.1/go.mod h1:f6D3HKX1fh4GedJszbz9u5Bn4MpBKsDOVXOJYkQB0z8=
+github.com/observiq/terraform-provider-bindplane v0.0.2 h1:0FF3BwSTCfiL1Etovose4i8vljgpYwQeDEFSBoA09rE=
+github.com/observiq/terraform-provider-bindplane v0.0.2/go.mod h1:f6D3HKX1fh4GedJszbz9u5Bn4MpBKsDOVXOJYkQB0z8=
 github.com/oklog/run v1.0.0 h1:Ru7dDtJNOyC66gQ5dQmaCa0qIsAUFY3sFpK1Xk8igrw=
 github.com/oklog/run v1.0.0/go.mod h1:dlhp/R75TPv97u0XWUtDeV/lRKWPKSdTuV0TZvrmrQA=
 github.com/oklog/ulid/v2 v2.1.0 h1:+9lhoxAP56we25tyYETBBY1YLA2SaoLvUFgrP2miPJU=
