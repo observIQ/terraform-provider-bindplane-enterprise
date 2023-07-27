@@ -8,7 +8,7 @@ Terraform provider for observIQ's agent management platform, [BindPlane OP](http
 
 ## Enterprise and Cloud
 
-This provider is an etension of the [BindPlane OP Provider](https://github.com/observIQ/terraform-provider-bindplane/tree/main) and is intended for use with BindPlane OP Enterprise and BindPlane OP Cloud.
+This provider is an extension of the [BindPlane OP Provider](https://github.com/observIQ/terraform-provider-bindplane/tree/main) and is intended for use with BindPlane OP Enterprise and BindPlane OP Cloud.
 
 - [Resource Configuration](https://github.com/observIQ/terraform-provider-bindplane/tree/main/doc/resources)
 - [Example Usage](https://github.com/observIQ/terraform-provider-bindplane/tree/main/example)
