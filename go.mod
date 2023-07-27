@@ -4,14 +4,9 @@ go 1.20
 
 require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.26.1
-	github.com/observiq/bindplane-op-enterprise v0.0.0-00010101000000-000000000000
-	github.com/observiq/terraform-provider-bindplane v0.0.0
+	github.com/observiq/bindplane-op-enterprise v1.21.0
+	github.com/observiq/terraform-provider-bindplane v0.0.1
 	github.com/stretchr/testify v1.8.4
-)
-
-replace (
-	github.com/observiq/bindplane-op-enterprise => /Users/jsirianni/git/bindplane-op-enterprise
-	github.com/observiq/terraform-provider-bindplane => /Users/jsirianni/git/terraform-provider-bindplane
 )
 
 require (
@@ -71,7 +66,7 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/observiq/bindplane-op v1.20.1 // indirect
+	github.com/observiq/bindplane-op v1.22.1-0.20230726173414-2934bdc4381f // indirect
 	github.com/observiq/stanza v1.6.1 // indirect
 	github.com/oklog/run v1.0.0 // indirect
 	github.com/oklog/ulid/v2 v2.1.0 // indirect
@@ -106,8 +101,8 @@ require (
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.11.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20230629202037-9506855d4529 // indirect
-	google.golang.org/grpc v1.56.1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20230720185612-659f7aaaa771 // indirect
+	google.golang.org/grpc v1.56.2 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
