@@ -43,10 +43,16 @@ test-local: provider
 	cp dist/provider_$(GOOS)_$(GOARCH_FULL)/terraform-provider-bindplane* test/local/providers/terraform-provider-bindplane-enterprise_v0.0.0
 
 .PHONY: test-end-to-end
-test-end-to-end: dev-tls provider
+test-end-to-end:
+	ifndef BINDPLANE_LICENSE
+	$(error BINDPLANE_LICENSE is not set)
+	endif
+
+	$(MAKE) dev-tls provider
+
 	mkdir -p test/integration/providers
 	cp dist/provider_$(GOOS)_$(GOARCH_FULL)/terraform-provider-bindplane* test/integration/providers/terraform-provider-bindplane-enterprise_v0.0.0
-	bash test/integration/test.sh
+	BINDPLANE_LICENSE=${BINDPLANE_LICENSE} test/integration/test.sh
 
 dev-tls: test/tls
 test/tls:
