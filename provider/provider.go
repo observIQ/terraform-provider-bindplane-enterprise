@@ -1,3 +1,4 @@
+// Package provider is the bindplane enterprise terraform provider.
 package provider
 
 import (
@@ -27,6 +28,9 @@ func Provider() *schema.Provider {
 	return provider
 }
 
+// Configure returns a configured provider. The schema is derived
+// from the open source provider's schema. It extends it by adding
+// options such as `api_key`.
 func Configure() *schema.Provider {
 	p := ossProvider.Configure()
 
