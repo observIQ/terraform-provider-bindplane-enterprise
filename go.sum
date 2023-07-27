@@ -284,12 +284,12 @@ github.com/modern-go/reflect2 v1.0.2/go.mod h1:yWuevngMOJpCy52FWWMvUC8ws7m/LJsjY
 github.com/morikuni/aec v1.0.0 h1:nP9CBfwrvYnBRgY6qfDQkygYDmYwOilePFkwzv4dU8A=
 github.com/observiq/bindplane-op v1.22.1-0.20230726173414-2934bdc4381f h1:sWo4g7+Tq0T+LBJ50oIwPCIsBvHcwHOG7qOB9uUh+x8=
 github.com/observiq/bindplane-op v1.22.1-0.20230726173414-2934bdc4381f/go.mod h1:O8jMP4ZMhOZYEE0c2PdK79lb3t6QFmvNLcMO9xGfKh0=
-github.com/observiq/bindplane-op-enterprise v1.21.0 h1:9ZNPZU/5IuWpvSOWXslDdeifkJL0BjbHtDvD1ceT20E=
-github.com/observiq/bindplane-op-enterprise v1.21.0/go.mod h1:i710gU5ozYLeSEIP1Zw0Uj/qL4+7QlJ5xGRfB00gBTs=
+github.com/observiq/bindplane-op-enterprise v1.22.0 h1:Q2le4v6Kye1lj/+f1S64mDiq/zuKP4xAu5iCEXtRcLM=
+github.com/observiq/bindplane-op-enterprise v1.22.0/go.mod h1:xbMnIZYuBbQYNAkz2G8gB2PmYiSi7xm/gphtPKtRfJ8=
 github.com/observiq/stanza v1.6.1 h1:VfnZ/JYz4zwZKznGWWyMShUCOMK4AeEax/aOTcXmpJI=
 github.com/observiq/stanza v1.6.1/go.mod h1:NAULITrz4PyrqwWPJJ/MOe11TVoA67RqlWTdFrXFNXA=
-github.com/observiq/terraform-provider-bindplane v0.0.2 h1:0FF3BwSTCfiL1Etovose4i8vljgpYwQeDEFSBoA09rE=
-github.com/observiq/terraform-provider-bindplane v0.0.2/go.mod h1:f6D3HKX1fh4GedJszbz9u5Bn4MpBKsDOVXOJYkQB0z8=
+github.com/observiq/terraform-provider-bindplane v0.0.3 h1:vLPkW4ozSqQy2uag8On/u4S+Hv9DXgd/y7TJzyLx2GE=
+github.com/observiq/terraform-provider-bindplane v0.0.3/go.mod h1:48CKOXxGlWYtHlJS/RVQj+nG0kPcuERSAxpiQWBCNjc=
 github.com/oklog/run v1.0.0 h1:Ru7dDtJNOyC66gQ5dQmaCa0qIsAUFY3sFpK1Xk8igrw=
 github.com/oklog/run v1.0.0/go.mod h1:dlhp/R75TPv97u0XWUtDeV/lRKWPKSdTuV0TZvrmrQA=
 github.com/oklog/ulid/v2 v2.1.0 h1:+9lhoxAP56we25tyYETBBY1YLA2SaoLvUFgrP2miPJU=

@@ -222,6 +222,9 @@ jobs:
           BINDPLANE_LICENSE: ${{ secrets.BINDPLANE_LICENSE }}
 
   build:
+    # Skip build for dependabot. It takes long and requires our GPG
+    # key. The `test-end-to-end` job will test building the binary.
+    if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: "ubuntu-22.04"
     needs:
       - setup-environment
