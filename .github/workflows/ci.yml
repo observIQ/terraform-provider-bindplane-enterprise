@@ -218,6 +218,8 @@ jobs:
           key: tooling-${{ runner.os }}-${{ hashFiles('./internal/tools/go.mod') }}
 
       - run: make test-end-to-end
+        env:
+          BINDPLANE_LICENSE: ${{ secrets.BINDPLANE_LICENSE }}
 
   build:
     runs-on: "ubuntu-22.04"
@@ -233,7 +235,7 @@ jobs:
       - name: Configure SSH Key
         uses: webfactory/ssh-agent@v0.7.0
         with:
-            ssh-private-key: ${{ secrets.BINDPLANE_ENTERPRISE_SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.BINDPLANE_ENTERPRISE_SSH_PRIVATE_KEY }}
 
       - name: Set up Go
         uses: actions/setup-go@v3
