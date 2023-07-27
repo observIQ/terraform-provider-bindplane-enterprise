@@ -1,3 +1,4 @@
+// Package provider is the bindplane enterprise terraform provider.
 package provider
 
 import (
@@ -13,7 +14,7 @@ import (
 )
 
 const (
-	envAPIKey = "BINDPLANE_TF_API_KEY"
+	envAPIKey = "BINDPLANE_TF_API_KEY" // #nosec G101 this is not a credential
 )
 
 // Provider returns a *schema.Provider.
@@ -27,6 +28,9 @@ func Provider() *schema.Provider {
 	return provider
 }
 
+// Configure returns a configured provider. The schema is derived
+// from the open source provider's schema. It extends it by adding
+// options such as `api_key`.
 func Configure() *schema.Provider {
 	p := ossProvider.Configure()
 
