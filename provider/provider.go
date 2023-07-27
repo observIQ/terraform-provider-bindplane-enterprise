@@ -13,7 +13,7 @@ import (
 )
 
 const (
-	envAPIKey = "BINDPLANE_TF_API_KEY"
+	envAPIKey = "BINDPLANE_TF_API_KEY" // #nosec G101 this is not a credential
 )
 
 // Provider returns a *schema.Provider.
