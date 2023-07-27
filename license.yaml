@@ -14,6 +14,4 @@ allow:
 
 exceptions:
   unresolvableLicense:
-    # Mapstructure is MIT licensed https://github.com/mitchellh/mapstructure
-    # and we distribute our own modified version
-    - path: "./internal/mapstructure"
+    - path: github.com/observiq/bindplane-op-enterprise
