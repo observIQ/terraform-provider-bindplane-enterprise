@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.27.0
 	github.com/observiq/bindplane-op-enterprise v1.22.0
-	github.com/observiq/terraform-provider-bindplane v0.0.5
+	github.com/observiq/terraform-provider-bindplane v0.0.6
 	github.com/stretchr/testify v1.8.4
 )
 
