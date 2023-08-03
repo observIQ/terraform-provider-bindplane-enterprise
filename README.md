@@ -7,4 +7,4 @@ Terraform provider for observIQ's agent management platform, [BindPlane OP](http
 
 ## Documentation
 
-See the [documentation](https://registry.terraform.io/providers/observIQ/bindplane/latest/docs) site for information on configuration and usage.
+The enterprise provider extends the [bindplane provider](https://registry.terraform.io/providers/observIQ/bindplane/latest/docs). Resource configuration is the same. See the [bindplane provider documentation](https://registry.terraform.io/providers/observIQ/bindplane/latest/docs) site for information on configuration and usage.
